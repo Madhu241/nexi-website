@@ -499,19 +499,23 @@
         }
 
 
-
         .img-fluid {
             display: block;
             width: 100%;
-            max-width: 1500px;
-            /* or set this to none if you want it even wider */
+            /* Ensure image doesn't exceed container width */
+            max-width: 100%;
+            /* Max width 100% to prevent overflow */
             height: auto;
             margin: 0 auto;
-            /* centers the image horizontally */
+            /* Centers image horizontally */
             padding: 30px;
+            /* Optional padding */
             object-fit: contain;
-            margin-left: -10px;
-            margin-left: 150px;
+            /* Keeps the aspect ratio */
+            margin-left: 20px;
+            ;
+
+            /* Remove negative margin */
         }
 
 
